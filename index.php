@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Styling.css">
+<title>Index</title>
 </head>
-<body>
-<div class="header">
-   <img src="images/streetwear_logo_cropped.png"
-    alt="logo" style="width:350px">
+
+
+<body> 
+    <div class="header">
+    <img src="images/streetwear_logo2.jpeg"
+        alt="logo" class="Logo">
     <input type="text" placeholder="Search...">
 </div>
  
@@ -20,7 +23,5 @@
     <a href = "" class="right">Sign up/Sign in</a>
     </div>
 </div>
-
-    
 </body>
 </html>
