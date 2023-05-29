@@ -38,16 +38,14 @@
     width: 800;
     height: 400;
   }
-  #slide-1:checked ~ .image-container {
+  #slide-1:target ~ .image-container {
     left: 0px;
   }
-  
-  #slide-2:checked ~ .image-container {
-    left: -800px;
+  #slide-2:target ~ .image-container {
+    left: -500px;
   }
-  
-  #slide-3:checked ~ .image-container {
-    left: -1600px;
+  #slide-3:target ~ .image-container {
+    left: -1000px;
   }
   .buttons {
     display: flex;

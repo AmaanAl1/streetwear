@@ -4,7 +4,7 @@
   <title>Streetwear-Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style4.css" rel="stylesheet">
+  <link href="CSS/style4.css" rel="stylesheet">
   </head>
 <body>
   <div class="wrapper">
@@ -20,9 +20,9 @@
       <span id="slide-2"></span>
       <span id="slide-3"></span>
       <div class="image-container">
-        <img src="images/black-t.jpg" class="slide" width="500" height="300" />
-        <img src="images/pink-hoodie.jpg" class="slide" width="500" height="300" />
-        <img src="images/brown-pants.jpg" class="slide" width="500" height="300" />
+        <img src="images/black-t.jpg" class="slide" width="800" height="400" />
+        <img src="images/pink-hoodie.jpg" class="slide" width="800" height="400" />
+        <img src="images/brown-pants.jpg" class="slide" width="800" height="400" />
       </div>
       <div class="buttons">
         <a href="#slide-1"></a>
