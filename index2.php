@@ -15,16 +15,22 @@
       </div>
     </div>
     <?php include "navbar.php"; ?>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="images/black-t.jpg" class="slide" width="500" height="300" />
+        <img src="images/pink-hoodie.jpg" class="slide" width="500" height="300" />
+        <img src="images/brown-pants.jpg" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+   
 
-    <div id="slider">
-      <figure>
-        <img src="images/brown-pants.jpg">
-        <img src="images/blue-jeans.jpg">
-        <img src="images/black-t.jpg">
-        <img src="images/pink-hoodie.jpg">
-        <img src="images/brown-pants.jpg">
-      </figure>
-    </div>
 
     <div class="footer">
       <h2>Footer</h2>
