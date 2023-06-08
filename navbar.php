@@ -1,12 +1,16 @@
-<div class="clearfix">
-<nav class="navbar">
-    <a href = "menswear2.php">Menswear</a>
-    <a href = "womenswear.php">Womenswear</a>
-    <a href = "kids.php">Kids</a>
-<nav class="navbar-right">
-    <a href = "" class="right">About us</a>
-    <a href = "" class="right">Sign up/Sign in</a>
-</nav>
-</nav>
+<nav>
+      <ul>
+        <li><a href="index3.php">Home</a></li>
+        <li><a href="menswear.php">Mens</a></li>
+        <li><a href="womenswear.php">Womens</a></li>
+        <li><a href="kids.php">Kids</a></li>
+      </ul>
+      <div class="search-bar">
+        <form action="search.php" method="GET">
+          <input type="text" name="query" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
     
