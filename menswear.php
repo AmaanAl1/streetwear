@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Clothing Website</title>
-  <link href="styles3.css" rel="stylesheet">
+  <link href="CSS/styles3.css" rel="stylesheet">
   </head>
 <body>
   <header>

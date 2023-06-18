@@ -3,7 +3,7 @@
 <head>
   <title>Clothing Website</title>
   <link href="CSS/styles3.css" rel="stylesheet">
-  <script src="JS/slideshow-auto.js"></script>
+  <script src="JS/slideshow.js"></script>
   </head>
 <body>
   <header>
@@ -19,13 +19,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="images/black-t.jpg" style="width:100%">
+    <img src="images/shirt-deal2.jpg" style="width:100%">
     <div class="text">Black T</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="images/brown-pants.jpg" style="width:100%">
+    <img src="images/shirt-deal2.jpg" style="width:100%">
+    <div class="text">Brown pants</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/shirt-deal2.jpg" style="width:100%">
     <div class="text">Brown pants</div>
   </div>
 
@@ -53,7 +59,8 @@
   </div>
   
   <footer>
-    &copy; 2023 Streetwear Essentials. All rights reserved.
-  </footer>
+  <h2>Streetwear Essentials</h2>
+  <p>Streetwear Essentials is a clothing Website for people who like comfortable stylish clothing</p>
+</footer>
 </body>
 </html>
