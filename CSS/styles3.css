@@ -200,11 +200,62 @@ nav ul li a {
   to {opacity: 1}
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
+.footer {
   background-color: rgb(171, 89, 171);
+  padding: 5px 0 15px;
+  margin-top: 80px;
+  margin-right: 10px;
+}
+
+.footernavigation {
+  background-color: rgb(171, 89, 171);
+  padding-top: 0;
+  padding-bottom: 5px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 46px;
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 15px;
+  color: rgb(171, 89, 171);
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+li a {
+  display: inline-block;
   color: white;
 }
+
+.footernavigation button {
+  background-color: rgb(171, 89, 171);
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: 'Alfa Slab One', serif;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+}
+
+
+
+
+
+
+
 
 </style>

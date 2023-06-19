@@ -20,19 +20,19 @@
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="images/shirt-deal2.jpg" style="width:100%">
-    <div class="text">Black T</div>
+    <div class="text">Promotion 1</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="images/shirt-deal2.jpg" style="width:100%">
-    <div class="text">Brown pants</div>
+    <div class="text">Promotion 2</div>
   </div>
   
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="images/shirt-deal2.jpg" style="width:100%">
-    <div class="text">Brown pants</div>
+    <div class="text">Promotion 3</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -57,10 +57,15 @@
     <img src="images/brown-pants.jpg" alt="Image 6">
     
   </div>
-  
-  <footer>
-  <h2>Streetwear Essentials</h2>
-  <p>Streetwear Essentials is a clothing Website for people who like comfortable stylish clothing</p>
-</footer>
 </body>
+
+<div class="footer">
+            <ul class="footernavigation">
+                <a href="PrivacyPolicy.php"><li><button>Privacy Policy</button></li>
+                <a href="TermsandConditions.php"><li><button>Terms and Conditions</button></li></a>
+                <a href="AboutUs.php"><li><button>About Us</button></li>
+                <a href="ContactUs.php"><li><button>Contact Us</button></li>               
+            </ul>
+        </div>
+    </div>
 </html>
