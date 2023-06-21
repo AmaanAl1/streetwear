@@ -217,6 +217,8 @@ nav ul li a {
   padding-left: 46px;
   margin-left: -20px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
@@ -226,17 +228,13 @@ ul {
 }
 
 li {
-  display: inline-block;
-  padding: 15px;
   color: rgb(171, 89, 171);
   text-decoration: none;
   font-size: 20px;
-  width: 25%; /* Four links of equal widths */
   text-align: center;
 }
 
 li a {
-  display: inline-block;
   color: white;
 }
 
@@ -245,11 +243,12 @@ li a {
   font-size: 15px;
   border-radius: 5px;
   font-family: 'Alfa Slab One', serif;
-  width: 100%;
   color: white;
   border: none;
   padding: 8px 16px;
 }
+
+
 
 
 

@@ -60,12 +60,11 @@
 </body>
 
 <div class="footer">
-            <ul class="footernavigation">
-                <a href="PrivacyPolicy.php"><li><button>Privacy Policy</button></li>
-                <a href="TermsandConditions.php"><li><button>Terms and Conditions</button></li></a>
-                <a href="AboutUs.php"><li><button>About Us</button></li>
-                <a href="ContactUs.php"><li><button>Contact Us</button></li>               
-            </ul>
-        </div>
-    </div>
+    <ul class="footernavigation">
+        <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
+        <li><a href="TermsandConditions.php"><button>Terms and Conditions</button></a></li>
+        <li><a href="AboutUs.php"><button>About Us</button></a></li>
+        <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
+    </ul>
+</div>
 </html>

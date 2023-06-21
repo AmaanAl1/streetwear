@@ -16,16 +16,23 @@
   
   <div class="gallery">
     <img src="images/brown-pants.jpg" alt="Image 1">
-    <img src="images/brown-pants.jpg" alt="Image 2">
-    <img src="images/brown-pants.jpg" alt="Image 3">
-    <img src="images/brown-pants.jpg" alt="Image 4">
-    <img src="images/brown-pants.jpg" alt="Image 5">
-    <img src="images/brown-pants.jpg" alt="Image 6">
+    <img src="images/black-t.jpg" alt="Image 2">
+    <img src="images/blue-jeans.jpg" alt="Image 3">
+    <img src="images/green-hoodie.jpg" alt="Image 4">
+    <img src="images/pink-hoodie.jpg" alt="Image 5">
+    <img src="images/brown-t.jpg" alt="Image 6">
+    <img src="images/black-hoodie.jpg" alt="Image 7">
+    <img src="images/black-pants.jpg" alt="Image 8">
     
   </div>
   
-  <footer>
-    &copy; 2023 Streetwear Essentials. All rights reserved.
-  </footer>
+  <div class="footer">
+    <ul class="footernavigation">
+        <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
+        <li><a href="TermsandConditions.php"><button>Terms and Conditions</button></a></li>
+        <li><a href="AboutUs.php"><button>About Us</button></a></li>
+        <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
+    </ul>
+</div>
 </body>
 </html>
