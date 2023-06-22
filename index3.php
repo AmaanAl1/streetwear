@@ -6,12 +6,14 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<div class="wrapper">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
     </div>
     <?php include "navbar.php"; ?>
   </header>
+</div>
   
  
   <div class="slideshow-container">

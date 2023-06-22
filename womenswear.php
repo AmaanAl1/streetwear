@@ -15,13 +15,14 @@
  
   
   <div class="gallery">
-    <img src="images/brown-pants.jpg" alt="Image 1">
-    <img src="images/brown-pants.jpg" alt="Image 2">
-    <img src="images/brown-pants.jpg" alt="Image 3">
-    <img src="images/brown-pants.jpg" alt="Image 4">
-    <img src="images/brown-pants.jpg" alt="Image 5">
-    <img src="images/brown-pants.jpg" alt="Image 6">
-    
+    <img src="images/grey-t-womens.jpg" alt="Image 1">
+    <img src="images/blue-jeans-womens.jpg" alt="Image 2">
+    <img src="images/black-pants-womens.jpg" alt="Image 3">
+    <img src="images/pink-t-womens.jpg" alt="Image 4">
+    <img src="images/white-t-womens.jpg" alt="Image 5">
+    <img src="images/beige-pants-womens.jpg" alt="Image 6">
+    <img src="images/brown-pants-womens.jpg" alt="Image 7">
+    <img src="images/black-t-womens.jpg" alt="Image 8">
   </div>
   <div class="footer">
     <ul class="footernavigation">
