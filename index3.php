@@ -6,6 +6,7 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<div class="wrapper clearfix">
 <div class="wrapper">
   <header>
     <div class="logo">
@@ -50,15 +51,44 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
+<h2>Popular Items</h2>
+<div class="responsive">
   <div class="gallery">
-    <img src="images/brown-pants.jpg" alt="Image 1">
-    <img src="images/brown-pants.jpg" alt="Image 2">
-    <img src="images/brown-pants.jpg" alt="Image 3">
-    <img src="images/brown-pants.jpg" alt="Image 4">
-    <img src="images/brown-pants.jpg" alt="Image 5">
-    <img src="images/brown-pants.jpg" alt="Image 6">
-    
+    <a target="_blank" href="images/pink-hoodie.jpg">
+      <img src="images/pink-hoodie.jpg" alt="image 1">
+    </a>
+    <div class="desc">Mens Pink Hoodie (XS,S,M,L,XL,XXL)</div>
   </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/brown-pants-womens.jpeg">
+      <img src="images/brown-pants-womens.jpeg" alt="image 2">
+    </a>
+    <div class="desc">Womens Brown Cargo Pants (XS,S,M,L,XL,XXL) </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/blue-jeans.jpg">
+      <img src="images/blue-jeans.jpg" alt="image 3">
+    </a>
+    <div class="desc">Mens Blue Jeans (XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/white-t-womens.jpg">
+      <img src="images/white-t-womens.jpg" alt="image 4">
+    </a>
+    <div class="desc">Womens White T-Shirt (XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+</div>
 </body>
 
 <div class="footer">

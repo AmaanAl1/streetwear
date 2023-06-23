@@ -5,28 +5,92 @@
   <link href="CSS/styles3.css" rel="stylesheet">
   </head>
 <body>
+<div class="wrapper clearfix">
+<div class="wrapper">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
     </div>
     <?php include "navbar.php"; ?>
   </header>
-  
+</div> 
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/brown-pants.jpg">
+      <img src="images/brown-pants.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/black-t.jpg">
+      <img src="images/black-t.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/blue-jeans.jpg">
+      <img src="images/blue-jeans.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/green-hoodie.jpg">
+      <img src="images/green-hoodie.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/pink-hoodie.jpg">
+      <img src="images/pink-hoodie.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/brown-t.jpg">
+      <img src="images/brown-t.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/black-hoodie.jpg">
+      <img src="images/black-hoodie.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/black-pants.jpg">
+      <img src="images/black-pants.jpg" alt="image">
+    </a>
+    <div class="desc">(XS,S,M,L,XL,XXL)</div>
+  </div>
+</div>
 
   
-  <div class="gallery">
-    <img src="images/brown-pants.jpg" alt="Image 1">
-    <img src="images/black-t.jpg" alt="Image 2">
-    <img src="images/blue-jeans.jpg" alt="Image 3">
-    <img src="images/green-hoodie.jpg" alt="Image 4">
-    <img src="images/pink-hoodie.jpg" alt="Image 5">
-    <img src="images/brown-t.jpg" alt="Image 6">
-    <img src="images/black-hoodie.jpg" alt="Image 7">
-    <img src="images/black-pants.jpg" alt="Image 8">
-    
-  </div>
-  
-  <div class="footer">
+</div>
+</body>
+
+<div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
         <li><a href="TermsandConditions.php"><button>Terms and Conditions</button></a></li>
@@ -34,5 +98,4 @@
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
-</body>
 </html>

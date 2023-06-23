@@ -14,11 +14,19 @@ body {
   overflow:hidden;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   background-color: rgb(171, 89, 171);
   padding: 20px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -34,6 +42,8 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 nav ul li {
@@ -72,22 +82,37 @@ nav ul li a {
 
 
 
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.gallery:hover {
+  border: 1px solid #777;
 }
 
 .gallery img {
-  width: 200px;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
+.desc {
+  padding: 15px;
+  text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin-bottom: 20px;
+  clear: none;
+}
+
 
 /* Responsive Styles */
 
@@ -115,11 +140,9 @@ nav ul li a {
     margin-bottom: 20px;
   }
   
-
-  
-  .gallery img {
-    width: 150px;
-    margin: 5px;
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 
@@ -216,6 +239,8 @@ nav ul li a {
   padding: 5px 0 15px;
   margin-top: 80px;
   margin-right: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .footernavigation {
@@ -259,6 +284,17 @@ li a {
   padding: 8px 16px;
 }
 
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
