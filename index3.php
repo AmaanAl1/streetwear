@@ -28,7 +28,7 @@
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="images/shirt-deal2.jpg" style="width:100%">
+    <img src="images/pants-promo-edit.jpg" style="width:100%">
     <div class="text">Promotion 2</div>
   </div>
   
