@@ -19,7 +19,7 @@
 $fnameErr = $lnameErr = $emailErr = $genderErr = $websiteErr = "";
 $fname = $lname = $email = $gender = $comment = $website = "";
 
-print_r ($_POST);
+//print_r ($_POST);
 include "setup.php";
 
 
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   VALUES (NULL, '$fname', '$lname', '$email', '$comment')";
   
   if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "Your message has been saved succesfully";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }

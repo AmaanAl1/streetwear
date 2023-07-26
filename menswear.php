@@ -16,7 +16,7 @@
 </div> 
   <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/brown-pants.jpg">
+    <a target="_blank" href="product.php?image=brown-pants.jpg">
       <img src="images/brown-pants.jpg" alt="image">
     </a>
     <div class="desc">(XS,S,M,L,XL,XXL)</div>
@@ -25,7 +25,7 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/black-t.jpg">
+    <a target="_blank" href="product.php?image=black-t.jpg">
       <img src="images/black-t.jpg" alt="image">
     </a>
     <div class="desc">(XS,S,M,L,XL,XXL)</div>
@@ -34,7 +34,7 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/blue-jeans.jpg">
+    <a target="_blank" href="product.php?image=blue-jeans.jpg">
       <img src="images/blue-jeans.jpg" alt="image">
     </a>
     <div class="desc">(XS,S,M,L,XL,XXL)</div>
@@ -43,7 +43,7 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/green-hoodie.jpg">
+    <a target="_blank" href="product.php?image=green-hoodie.jpg">
       <img src="images/green-hoodie.jpg" alt="image">
     </a>
     <div class="desc">(XS,S,M,L,XL,XXL)</div>
