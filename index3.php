@@ -7,15 +7,14 @@
   </head>
 <body>
 <div class="wrapper clearfix">
-<div class="wrapper">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
     </div>
     <?php include "navbar.php"; ?>
   </header>
-</div>
-  
+
+<main>  
  
   <div class="slideshow-container">
 
@@ -63,10 +62,10 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/brown-pants-womens.jpeg">
-      <img src="images/brown-pants-womens.jpeg" alt="image 2">
+    <a target="_blank" href="images/brown-pants-womens2.jpg">
+      <img src="images/brown-pants-womens2.jpg" alt="image 2">
     </a>
-    <div class="desc">Womens Brown Cargo Pants (XS,S,M,L,XL,XXL) </div>
+    <div class="desc">Womens Brown Pants (XS,S,M,L,XL,XXL) </div>
   </div>
 </div>
 
@@ -81,16 +80,18 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/white-t-womens.jpg">
-      <img src="images/white-t-womens.jpg" alt="image 4">
+    <a target="_blank" href="images/white-t-womens2.jpg">
+      <img src="images/white-t-womens2.jpg" alt="image 4">
     </a>
     <div class="desc">Womens White T-Shirt (XS,S,M,L,XL,XXL)</div>
   </div>
 </div>
+</main>
+
+
 
 </div>
 </body>
-
 <div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
@@ -99,4 +100,5 @@
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
+
 </html>

@@ -6,7 +6,7 @@
   </head>
 <body>
 <div class="wrapper clearfix">
-<div class="wrapper">
+
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
@@ -70,8 +70,8 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/black-hoodie.jpg">
-      <img src="images/black-hoodie.jpg" alt="image">
+    <a target="_blank" href="images/black-hoodie2.jpg">
+      <img src="images/black-hoodie2.jpg" alt="image">
     </a>
     <div class="desc">(XS,S,M,L,XL,XXL)</div>
   </div>
@@ -89,7 +89,6 @@
   
 </div>
 </body>
-
 <div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
@@ -98,4 +97,6 @@
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
+
+
 </html>
