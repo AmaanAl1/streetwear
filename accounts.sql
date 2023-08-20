@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 16, 2023 at 11:34 PM
+-- Generation Time: Aug 20, 2023 at 11:59 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,8 +40,6 @@ CREATE TABLE `accounts` (
 
 INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES
 (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com'),
-(2, '', '', ''),
-(3, '', '', ''),
 (4, 'test2', '$2y$10$ZmGGLMiKh0wapHKI96zu.ee7jQoclW0vVQeC07yGKl0a3cVVU2.lO', 'test2@mail.com');
 
 --
