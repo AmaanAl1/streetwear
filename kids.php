@@ -13,7 +13,7 @@
     <?php include "navbar.php"; ?>
   </header>
   <main>
-</div> 
+
   <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/kids-blue-t2.jpg">
@@ -88,16 +88,10 @@
 </main>
   
 
+</div> 
 </div>
+<?php include "footer.php"; ?>
 </body>
-<div class="footer">
-    <ul class="footernavigation">
-        <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
-        <li><a href="TermsandConditions.php"><button>Terms and Conditions</button></a></li>
-        <li><a href="AboutUs.php"><button>About Us</button></a></li>
-        <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
-    </ul>
-</div>
-
+</html>
 
 </html>

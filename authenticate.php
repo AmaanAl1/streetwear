@@ -28,7 +28,11 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
-            header('Location: admin2.php');
+            if ($_POST['username']== "admin") {
+            header('Location: admin.php');
+        } else {
+            header('Location: admin.php');
+        }
         } else {
             // Incorrect password
             echo 'Incorrect username and/or password!';

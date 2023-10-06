@@ -37,6 +37,7 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo 'No records found.';
 }
+?>
 <style>
     table {
         width: 100%;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Clothing Website</title>
+  <title>Clothing Website Edit</title>
   <link href="CSS/styles3.css" rel="stylesheet">
   <script src="JS/slideshow.js"></script>
   </head>
@@ -31,12 +31,7 @@ if(isset($_GET['id'])) {
     $row = mysqli_fetch_assoc($result);
     // Display the edit form with the existing record's data
     ?>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Edit Contact</title>
-</head>
-<body>
+
 <h2>Edit Contact</h2>
 <form method="post" action="update.php">
 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
@@ -62,43 +57,9 @@ echo 'No record found with the provided ID.';
     echo 'ID parameter not provided.';
 }// Close the database connection
 mysqli_close($conn);
-?>
-<?php
-// Include the setup.php file to establish database connection
-require_once 'setup.php';
-// Check if the form is submitted
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-      // Check if all required form fields are filled
-      if(isset($_POST['id'], $_POST['fname'], $_POST['lname'], $_POST['email'], $_POST['comment'])) {
-        $id = $_POST['id'];
-        $fname = $_POST['fname'];
-        $lname = $_POST['lname'];
-        $email = $_POST['email'];
-        $comment = $_POST['comment'];
-                // Update the record in the "contacts" table
-                $query = "UPDATE contacts SET fname = ?, lname = ?, email = ?, comment = ? WHERE id = ?";
-                $stmt = mysqli_prepare($conn, $query);
-                mysqli_stmt_bind_param($stmt, "ssssi", $fname, $lname, $email, $comment, $id);
-                if(mysqli_stmt_execute($stmt)) {
-                  echo 'Record updated successfully.';
-              } else {
-                  echo 'Error updating record: ' . mysqli_stmt_error($stmt);
-              }
-              // Close the statement
-              mysqli_stmt_close($stmt);
-          } else {
-              echo 'All form fields are required.';
-          }
-      } else {
-          echo 'Invalid request.';
-      }
-      
-      // Close the database connection
-      mysqli_close($conn);
-      ?>
-      
 
 ?>
+    
 </main>
 </body>
 
