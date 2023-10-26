@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 12:01 AM
+-- Generation Time: Oct 26, 2023 at 11:51 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -111,7 +111,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `name`, `description`, `price`, `image`, `category`) VALUES
-(1, 'Pink Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'pink-hoodie.jpg', 'Menswear'),
+(1, 'Pink Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'pink-hoodie.jpg', 'menswear'),
 (2, 'Brown Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'brown-pants.jpg', 'menswear'),
 (4, 'Black T-shirt', '(XS,S,M,L,XL,XXL)', '50', 'black-t.jpg', 'menswear'),
 (6, 'Blue Jeans', '(XS,S,M,L,XL,XXL)', '50', 'blue-jeans.jpg', 'menswear'),

@@ -48,18 +48,43 @@
     <?php include "navbar.php"; ?>
   </header>
 </div>
-<?php
-if(isset($_GET['image'])) {
-    $image = $_GET['image'];
-}
-?>
+
+
+
   <main>
   <div class="card">
+  <?php
+// Include the setup.php file to establish database connection
+require_once 'setup.php';
+//print_r($_GET);
+if(isset($_GET['id'])) {
+  $id = $_GET['id'];
+}
+// Fetch records from the "items" table
+$sql = "SELECT * FROM items where id = '$id'";
+$result = mysqli_query($conn, $sql);
+if (mysqli_num_rows($result) > 0) {
+     // Display the records in a gallery
+
+     $row = mysqli_fetch_assoc($result);
+        //print_r($row);
+        $image = $row["image"];
+        $name = $row["name"];
+        $id = $row["id"];
+        $price = $row["price"];
+        $description = $row["description"];
+
+        ?>
   <img src="images/<?php print $image;?>" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans..</p>
+  <h1><?php print $name;?></h1>
+  <p class="price">$<?php print $price;?></p>
+  <p><?php print $description;?></p>
   <p><button>Add to Cart</button></p>
+<?php
+} else {
+    echo 'No records found.';
+}
+?>
 </div>
   </main>
  
