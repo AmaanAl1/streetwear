@@ -6,6 +6,7 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<div class="wrapper clearfix">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
@@ -108,9 +109,10 @@ echo "<br>";
 echo $comment;
 
 ?>
-</main>
-</body>
 
+</main>
+
+</div>
 <div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
@@ -119,4 +121,5 @@ echo $comment;
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
+</body>
 </html>

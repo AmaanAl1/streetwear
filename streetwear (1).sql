@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2023 at 11:51 PM
+-- Generation Time: Oct 30, 2023 at 12:28 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -103,29 +103,39 @@ CREATE TABLE `items` (
   `description` text NOT NULL,
   `price` decimal(10,0) NOT NULL,
   `image` varchar(50) NOT NULL,
-  `category` varchar(20) NOT NULL
+  `category` varchar(20) NOT NULL,
+  `specials` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `items`
 --
 
-INSERT INTO `items` (`id`, `name`, `description`, `price`, `image`, `category`) VALUES
-(1, 'Pink Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'pink-hoodie.jpg', 'menswear'),
-(2, 'Brown Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'brown-pants.jpg', 'menswear'),
-(4, 'Black T-shirt', '(XS,S,M,L,XL,XXL)', '50', 'black-t.jpg', 'menswear'),
-(6, 'Blue Jeans', '(XS,S,M,L,XL,XXL)', '50', 'blue-jeans.jpg', 'menswear'),
-(7, 'Green Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'green-hoodie.jpg', 'menswear'),
-(10, 'Beige Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'beige-pants-womens.jpg', 'womenswear'),
-(11, 'Black Pants', '(XS,S,M,L,XL,XXL)', '50', 'black-pants-womens.jpg', 'womenswear'),
-(14, 'White T-Shirt', '(XS,S,M,L,XL,XXL)', '35', 'white-t-womens.jpg', 'womenswear'),
-(15, 'pink t-shirt', '(XS,S,M,L,XL,XXL)', '35', 'pink-t-womens.jpg', 'womenswear'),
-(19, 'Blue Jeans', '(XS,S,M,L,XL,XXL)', '50', 'blue-jeans-womens.jpg', 'womenswear'),
-(20, 'Green T-Shirt', '(XS,S,M,L,XL,XXL)', '15', 'green-t-kids.jpg', 'kidswear'),
-(21, 'Grey Pants', '(XS,S,M,L,XL,XXL)', '30', 'grey-pants-kids.jpg', 'kidswear'),
-(26, 'Blue Pants', '(XS,S,M,L,XL,XXL)', '30', 'blue-pants-kids.jpg', 'kidswear'),
-(27, 'White T-shirt', '(XS,S,M,L,XL,XXL)', '15', 'white-t-kids.jpg', 'kidswear'),
-(28, 'Blue T-shirt', '(XS,S,M,L,XL,XXL)', '15', 'blue-t-kids.jpg', 'kidswear');
+INSERT INTO `items` (`id`, `name`, `description`, `price`, `image`, `category`, `specials`) VALUES
+(1, 'Pink Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'pink-hoodie.jpg', 'menswear', 'y'),
+(2, 'Brown Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'brown-pants.jpg', 'menswear', ''),
+(4, 'Black T-shirt', '(XS,S,M,L,XL,XXL)', '50', 'black-t.jpg', 'menswear', ''),
+(6, 'Blue Jeans', '(XS,S,M,L,XL,XXL)', '50', 'blue-jeans.jpg', 'menswear', 'y'),
+(7, 'Green Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'green-hoodie.jpg', 'menswear', ''),
+(10, 'Beige Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'beige-pants-womens2.jpg', 'womenswear', ''),
+(11, 'Black Pants', '(XS,S,M,L,XL,XXL)', '50', 'black-pants-womens.jpg', 'womenswear', ''),
+(14, 'White T-Shirt', '(XS,S,M,L,XL,XXL)', '35', 'white-t-womens.jpg', 'womenswear', 'y'),
+(15, 'pink t-shirt', '(XS,S,M,L,XL,XXL)', '35', 'pink-t-womens2.jpg', 'womenswear', ''),
+(19, 'Blue Jeans', '(XS,S,M,L,XL,XXL)', '50', 'blue-jeans-womens2.jpg', 'womenswear', ''),
+(20, 'Green T-Shirt', '(XS,S,M,L,XL,XXL)', '15', 'kids-green-t2.jpg', 'kidswear', ''),
+(26, 'Blue Pants', '(XS,S,M,L,XL,XXL)', '30', 'kids-blue-pants2.jpg', 'kidswear', ''),
+(27, 'White T-shirt', '(XS,S,M,L,XL,XXL)', '15', 'kids-white-t2.jpg', 'kidswear', ''),
+(28, 'Blue T-shirt', '(XS,S,M,L,XL,XXL)', '15', 'kids-blue-t2.jpg', 'kidswear', ''),
+(30, 'Black Hoodie', '(XS,S,M,L,XL,XXL)', '50', 'black-hoodie2.jpg', 'menswear', ''),
+(32, 'Black Cargo Pants', '(XS,S,M,L,XL,XXL)', '50', 'black-pants.jpg', 'menswear', ''),
+(33, 'Brown T-shirt', '(XS,S,M,L,XL,XXL)', '50', 'brown-t.jpg', 'menswear', ''),
+(36, 'Brown Pants', '(XS,S,M,L,XL,XXL)', '35', 'brown-pants-womens2.jpg', 'womenswear', 'y'),
+(37, 'Grey T-shirt', '(XS,S,M,L,XL,XXL)', '35', 'grey-t-womens2.jpg', 'womenswear', ''),
+(40, 'Black T-shirt', '(XS,S,M,L,XL,XXL)', '35', 'black-t-womens2.jpg', 'womenswear', ''),
+(42, 'Grey T-shirt', '(XS,S,M,L,XL,XXL)', '15', 'kids-grey-t2.jpg', 'kidswear', ''),
+(43, 'Black pants', '(XS,S,M,L,XL,XXL)', '15', 'kids-black-pants2.jpg', 'kidswear', ''),
+(47, 'Grey Pants', '(XS,S,M,L,XL,XXL)', '15', 'kids-grey-pants2.jpg', 'kidswear', ''),
+(48, 'Green Pants', '(XS,S,M,L,XL,XXL)', '15', 'kids-green-pants2.jpg', 'kidswear', '');
 
 -- --------------------------------------------------------
 
@@ -276,7 +286,7 @@ ALTER TABLE `core`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `products`
