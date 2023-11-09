@@ -83,5 +83,5 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';
 }
-$conn->close();
+$conn->close(); 
 ?>
