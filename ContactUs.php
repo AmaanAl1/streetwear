@@ -6,6 +6,10 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<?php
+// Start the session
+session_start();
+?>
 <div class="wrapper clearfix">
   <header>
     <div class="logo">
@@ -98,21 +102,11 @@ function test_input($data) {
   <input type="submit" name="submit" value="Submit">  
 </form>
 
-<?php
-echo "<h2>Your Input:</h2>";
-echo $fname;
-echo "<br>";
-echo $lname;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $comment;
 
-?>
 
 </main>
 
-</div>
+
 <div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
@@ -120,6 +114,7 @@ echo $comment;
         <li><a href="AboutUs.php"><button>About Us</button></a></li>
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
+</div>
 </div>
 </body>
 </html>

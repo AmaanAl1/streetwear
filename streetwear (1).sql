@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 30, 2023 at 12:28 AM
+-- Generation Time: Nov 10, 2023 at 12:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -42,7 +42,9 @@ INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES
 (1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com'),
 (4, 'test2', '$2y$10$ZmGGLMiKh0wapHKI96zu.ee7jQoclW0vVQeC07yGKl0a3cVVU2.lO', 'test2@mail.com'),
 (5, 'fred', '$2y$10$EPRAvtdU5/yBGuqprVNn5.kOkQ8FAbLl37r.Elda7n3iL/1R3vRwC', 'fred@mail.com'),
-(6, 'admin', '$2y$10$/6lwsUuoIzRY4mghBEfECO7njQjc6pT3.RzpaXDhSrKUt7vK7Zg82', 'admin@mail.com');
+(6, 'admin', '$2y$10$/6lwsUuoIzRY4mghBEfECO7njQjc6pT3.RzpaXDhSrKUt7vK7Zg82', 'admin@mail.com'),
+(7, 'amaanali', '$2y$10$vSwM0HI.eaJiE2otARJXVOax5qU3/IOXu9Y5xcdNr.eqJ4mn0GqV.', 'aa@mail.com'),
+(8, 'bob1234', '$2y$10$xLDwwD/6PG0X0Vbm..ow4.q6DN9kXvRC0Tq.jIIqmng5hddfAD0.O', 'bob@mail.com');
 
 -- --------------------------------------------------------
 
@@ -64,32 +66,10 @@ CREATE TABLE `contacts` (
 
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (1, 'Blake', 'Mackay', 'blake@mail.com', 'Which pants do you recommend'),
-(3, 'amaan', 'ali', 'Amaan@mail.com', 'comment'),
-(5, 'sheron', 'ali', 'sheron@mail.com', 'pants'),
-(7, 'kobe', 'byrant', 'kbryant@gmail.com', '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `core`
---
-
-CREATE TABLE `core` (
-  `core_id` int(11) NOT NULL,
-  `surname` varchar(50) NOT NULL,
-  `firstname` varchar(50) NOT NULL,
-  `ph` varchar(20) NOT NULL,
-  `ad1` varchar(50) NOT NULL,
-  `ad2` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `core`
---
-
-INSERT INTO `core` (`core_id`, `surname`, `firstname`, `ph`, `ad1`, `ad2`) VALUES
-(170001, 'Olive', 'Grant', '0201234567', '62 Smith Road', 'Warkworth'),
-(170002, 'Bounty', 'William', '0221234567', '23 Omaha Valley Rd', 'Warkworth');
+(3, 'amaan', 'ali', 'Amaan@mail.com', 'fast shipping'),
+(5, 'sheron', 'ali', 'sheron@mail.com', 'the material of these clothes are high quality'),
+(7, 'kobe', 'byrant', 'kbryant@gmail.com', ''),
+(17, 'bob', 'doe', 'bob@mail.com', 'need new styles');
 
 -- --------------------------------------------------------
 
@@ -164,54 +144,6 @@ INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`,
 (3, 'Headphones', '', '19.99', '0.00', 23, 'headphones.jpg', '2019-03-13 18:47:56'),
 (4, 'Digital Camera', '', '69.99', '0.00', 7, 'camera.jpg', '2019-03-13 17:42:04');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `results`
---
-
-CREATE TABLE `results` (
-  `results_id` int(11) NOT NULL,
-  `standard_id` int(11) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `core_id` int(11) NOT NULL,
-  `result` varchar(1) NOT NULL,
-  `Date` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `results`
---
-
-INSERT INTO `results` (`results_id`, `standard_id`, `title`, `core_id`, `result`, `Date`) VALUES
-(1, 91900, 'Inquiry', 170001, '', '2022-02-09'),
-(2, 91909, 'Internal', 170001, '', '2022-02-09'),
-(3, 91903, 'external', 170001, '', '2022-02-09'),
-(4, 91909, 'External', 170001, '', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `standards`
---
-
-CREATE TABLE `standards` (
-  `standardID` int(11) NOT NULL,
-  `title` text NOT NULL,
-  `version` int(11) NOT NULL,
-  `extra` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `standards`
---
-
-INSERT INTO `standards` (`standardID`, `title`, `version`, `extra`) VALUES
-(91900, 'Inquiry', 1, 1),
-(91902, 'Create a Database', 1, 1),
-(91903, 'Create A website', 1, 1),
-(91909, 'Present a reflective analysis of developing a digital outcome', 1, 1);
-
 --
 -- Indexes for dumped tables
 --
@@ -229,12 +161,6 @@ ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `core`
---
-ALTER TABLE `core`
-  ADD PRIMARY KEY (`core_id`);
-
---
 -- Indexes for table `items`
 --
 ALTER TABLE `items`
@@ -247,20 +173,6 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `results`
---
-ALTER TABLE `results`
-  ADD PRIMARY KEY (`results_id`),
-  ADD KEY `results_id` (`results_id`),
-  ADD KEY `standard_id` (`standard_id`);
-
---
--- Indexes for table `standards`
---
-ALTER TABLE `standards`
-  ADD PRIMARY KEY (`standardID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -268,19 +180,13 @@ ALTER TABLE `standards`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT for table `core`
---
-ALTER TABLE `core`
-  MODIFY `core_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170003;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `items`
@@ -293,22 +199,6 @@ ALTER TABLE `items`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `results`
---
-ALTER TABLE `results`
-  MODIFY `results_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `results`
---
-ALTER TABLE `results`
-  ADD CONSTRAINT `results_ibfk_1` FOREIGN KEY (`standard_id`) REFERENCES `standards` (`standardID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Clothing Website</title>
   <link href="CSS/styles3.css" rel="stylesheet">
   <script src="JS/slideshow.js"></script>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
   </head>
 <body>
+<?php
+// Start the session
+session_start();
+?>
+<div class="wrapper clearfix">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
@@ -14,6 +36,7 @@
   </header>
 
 <main>
+<h1>Contact Page</h1>
 <?php
 // Include the setup.php file to establish database connection
 require_once 'setup.php';
@@ -38,26 +61,11 @@ if (mysqli_num_rows($result) > 0) {
     echo 'No records found.';
 }
 ?>
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
 
-    th, td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
 
-    tr:hover {
-        background-color: #f5f5f5;
-    }
-</style>
 
-?>
 </main>
-</body>
+
 
 <div class="footer">
     <ul class="footernavigation">
@@ -67,4 +75,6 @@ if (mysqli_num_rows($result) > 0) {
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
+</div>
+</body>
 </html>

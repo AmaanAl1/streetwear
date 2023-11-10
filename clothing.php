@@ -6,6 +6,10 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<?php
+// Start the session
+session_start();
+?>
 <div class="wrapper clearfix">
   <header>
     <div class="logo">

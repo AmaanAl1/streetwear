@@ -6,6 +6,11 @@
   <script src="JS/slideshow.js"></script>
   </head>
 <body>
+<?php
+// Start the session
+session_start();
+?>
+<div class="wrapper clearfix">
   <header>
     <div class="logo">
       <img src="images/streetwear_logo2.jpeg" alt="Business Name">
@@ -61,7 +66,7 @@ mysqli_close($conn);
 ?>
     
 </main>
-</body>
+
 
 <div class="footer">
     <ul class="footernavigation">
@@ -71,4 +76,6 @@ mysqli_close($conn);
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
+</div>
+</body>
 </html>

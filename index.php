@@ -97,6 +97,10 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
+<?php
+// Start the session
+session_start();
+?>
 <div class="wrapper clearfix">
   <header>
     <div class="logo">

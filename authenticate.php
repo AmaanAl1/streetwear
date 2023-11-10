@@ -31,7 +31,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
             if ($_POST['username']== "admin") {
             header('Location: admin.php');
         } else {
-            header('Location: admin.php');
+            header('Location: index.php');
         }
         } else {
             // Incorrect password
