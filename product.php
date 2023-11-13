@@ -75,11 +75,15 @@ if (mysqli_num_rows($result) > 0) {
         $description = $row["description"];
 
         ?>
+  <form method="post" action="cart.php">
+ <input type="hidden" id="itemId" name="itemId" value="<?php echo$id ?>">
   <img src="images/<?php print $image;?>" alt="Denim Jeans" style="width:100%">
   <h1><?php print $name;?></h1>
   <p class="price">$<?php print $price;?></p>
   <p><?php print $description;?></p>
+  
   <p><button>Add to Cart</button></p>
+</form>
 <?php
 } else {
     echo 'No records found.';
