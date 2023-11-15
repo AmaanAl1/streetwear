@@ -251,7 +251,7 @@ img {vertical-align: middle;}
   background-color: rgb(171, 89, 171);
   padding-top: 0;
   padding-bottom: 5px;
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   overflow: hidden;
   padding-left: 46px;

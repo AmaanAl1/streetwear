@@ -189,7 +189,7 @@ if (mysqli_num_rows($result) > 0) {
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
-</div>
+
 
 <script>
 let slideIndex = 1;
@@ -219,6 +219,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
+</div>
 </body>
 </html> 

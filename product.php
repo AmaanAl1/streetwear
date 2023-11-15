@@ -77,6 +77,7 @@ if (mysqli_num_rows($result) > 0) {
         ?>
   <form method="post" action="cart.php">
  <input type="hidden" id="itemId" name="itemId" value="<?php echo$id ?>">
+ <input type="hidden" id="quantity" name="quantity" value="1">
   <img src="images/<?php print $image;?>" alt="Denim Jeans" style="width:100%">
   <h1><?php print $name;?></h1>
   <p class="price">$<?php print $price;?></p>

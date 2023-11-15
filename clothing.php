@@ -59,8 +59,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
 
-</div>
-</body>
+
 <div class="footer">
     <ul class="footernavigation">
         <li><a href="PrivacyPolicy.php"><button>Privacy Policy</button></a></li>
@@ -69,5 +68,6 @@ if (mysqli_num_rows($result) > 0) {
         <li><a href="ContactUs.php"><button>Contact Us</button></a></li>
     </ul>
 </div>
-
+</div>
+</body>
 </html>

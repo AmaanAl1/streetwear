@@ -13,16 +13,8 @@
         <?php } ?>
 
         <li><a href="register.php">Register</a></li>
-        <!--<nav>
-                        <a href="index.php">Home</a>
-                        <a href="index.php?page=products">Products</a>
-                    </nav>
-                    <div class="link-icons">
-                        <a href="index.php?page=cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                    </div>
-                    </nav>-->
+        <li><a href="cart.php">Cart</a></li>
+  
       </ul>
       <div class="search-bar">
         <form action="search.php" method="GET">
