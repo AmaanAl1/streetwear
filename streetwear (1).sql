@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2023 at 01:10 AM
+-- Generation Time: Nov 17, 2023 at 12:37 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -44,7 +44,8 @@ INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES
 (5, 'fred', '$2y$10$EPRAvtdU5/yBGuqprVNn5.kOkQ8FAbLl37r.Elda7n3iL/1R3vRwC', 'fred@mail.com'),
 (6, 'admin', '$2y$10$/6lwsUuoIzRY4mghBEfECO7njQjc6pT3.RzpaXDhSrKUt7vK7Zg82', 'admin@mail.com'),
 (7, 'amaanali', '$2y$10$vSwM0HI.eaJiE2otARJXVOax5qU3/IOXu9Y5xcdNr.eqJ4mn0GqV.', 'aa@mail.com'),
-(8, 'bob1234', '$2y$10$xLDwwD/6PG0X0Vbm..ow4.q6DN9kXvRC0Tq.jIIqmng5hddfAD0.O', 'bob@mail.com');
+(8, 'bob1234', '$2y$10$xLDwwD/6PG0X0Vbm..ow4.q6DN9kXvRC0Tq.jIIqmng5hddfAD0.O', 'bob@mail.com'),
+(9, 'aa19033', '$2y$10$MRzpWd2x7emq5lG4GuTPUeEFLMX8DsHg.xYC1nC44t0SVVk/iKQAy', 'aa@mail.com');
 
 -- --------------------------------------------------------
 
@@ -135,8 +136,10 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `itemId`, `accountId`, `InvoiceDate`) VALUES
-(2, 6, 7, '2023-11-15'),
-(3, 6, 7, '2023-11-15');
+(8, 7, 7, '2023-11-17'),
+(9, 7, 7, '2023-11-17'),
+(10, 36, 9, '2023-11-17'),
+(11, 36, 9, '2023-11-17');
 
 --
 -- Indexes for dumped tables
@@ -176,7 +179,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -194,7 +197,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables

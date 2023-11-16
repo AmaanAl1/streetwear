@@ -42,23 +42,30 @@ session_start();
   </header>
 
 <main>
-<h1>Contacts List</h1>
+<h1>Orders List</h1>
 <?php
 // Include the setup.php file to establish database connection
 require_once 'setup.php';
-// Fetch records from the "contacts" table
-$sql = "SELECT * FROM contacts";
+// Fetch records from the "orders" table
+//$sql = "SELECT * FROM orders";
+$sql = "SELECT orders.id, accounts.username, items.name, orders.InvoiceDate
+FROM orders
+INNER JOIN accounts ON orders.accountId=accounts.id
+INNER JOIN items ON orders.itemID=items.id";
+
+//INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+//print $sql;
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
      // Display the records in a table
      echo '<table>';
-     echo '<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Comment</th><th>Actions</th></tr>';
+     echo '<tr><th>OrderId</th><th>AccountId</th><th>ItemID</th><th>InvoiceDate</th><th>Actions</th></tr>';
      while ($row = mysqli_fetch_assoc($result)) {
         echo '<tr>';
-        echo '<td>' . $row['fname'] . '</td>';
-        echo '<td>' . $row['lname'] . '</td>';
-        echo '<td>' . $row['email'] . '</td>';
-        echo '<td>' . $row['comment'] . '</td>';
+        echo '<td>' . $row['id'] . '</td>';
+        echo '<td>' . $row['username'] . '</td>';
+        echo '<td>' . $row['name'] . '</td>';
+        echo '<td>' . $row['InvoiceDate'] . '</td>';
         echo '<td><a href="edit.php?id=' . $row['id'] . ' ">Edit</a> | <a href="delete.php?id=' . $row['id'] .'">Delete</a></td>';
                  echo '</tr>';
     }
