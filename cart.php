@@ -20,12 +20,20 @@
 session_start();
 //session_unset();
 require_once 'setup.php';
-print_r($_SESSION);
-print "<br>";
-print_r($_POST);
+//print_r($_SESSION);
+//print "<br>";
+//print_r($_POST);
 //Array ( [loggedin] => 1 [name] => amaanali [id] => 7 )
 //Array ( [itemId] => 6 )
 // If the user clicked the add to cart button on the product page we can check for the form data
+
+if(isset($_SESSION['loggedin'])){
+
+} else {
+ header('Location: login.php');
+ 
+}
+
 if (isset($_POST['itemId'], $_POST['quantity']) && is_numeric($_POST['itemId']) && is_numeric($_POST['quantity'])) {
     // Set the post variables so we easily identify them, also make sure they are integer
     $itemId = (int)$_POST['itemId'];

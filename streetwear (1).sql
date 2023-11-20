@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2023 at 12:37 AM
+-- Generation Time: Nov 20, 2023 at 11:45 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -136,10 +136,9 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `itemId`, `accountId`, `InvoiceDate`) VALUES
-(8, 7, 7, '2023-11-17'),
 (9, 7, 7, '2023-11-17'),
-(10, 36, 9, '2023-11-17'),
-(11, 36, 9, '2023-11-17');
+(11, 36, 9, '2023-11-17'),
+(14, 4, 7, '2023-11-20');
 
 --
 -- Indexes for dumped tables
@@ -197,7 +196,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
